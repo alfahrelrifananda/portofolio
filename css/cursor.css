@@ -1,0 +1,16 @@
+.big-cursor {
+    background-image: url(../images/cursor.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    pointer-events: none;
+    z-index: -99;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.big-cursor.hide {
+    opacity: 0;
+}

@@ -1,0 +1,266 @@
+@font-face {
+  font-family: 'neue-montreal-bold';
+  src: url('../fonts/NeueMontreal-Bold.otf');
+}
+@font-face {
+  font-family: 'neue-montreal-light';
+  src: url('../fonts/NeueMontreal-Light.otf');
+}
+@font-face {
+  font-family: 'neue-montreal-medium';
+  src: url('../fonts/NeueMontreal-Medium.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --black: black;
+  --white: white;
+}
+::-moz-selection {
+  color: var(--white);
+  background: var(--black);
+}
+
+::selection {
+  color: var(--white);
+  background: var(--black);
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--black);
+}
+body {
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+.navbar {
+  display: grid;
+  z-index: 99;
+  width: 100vw;
+  transition: all 0.5s;
+  opacity: 1;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 16px;
+}
+.navbar.opacity {
+  opacity: 0.3;
+}
+.navbar .logo {
+  font-family: 'neue-montreal-bold';
+  font-size: 2em;
+  color: var(--black);
+  padding-left: 50px;
+}
+.navbar .menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  border-radius: 32px;
+  font-family: 'neue-montreal-medium';
+  border: solid 2px var(--black);
+  overflow: hidden;
+}
+.menu-mobile {
+  display: none;
+}
+.navbar .menu a {
+  width: 116px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--black);
+  border-radius: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.navbar .theme {
+  font-size: 1.5em;
+  cursor: pointer;
+  text-align: right;
+  color: var(--black);
+  padding-right: 50px;
+}
+.navbar .theme .theme-button {
+  transition: transform 0.3s ease;
+  position: relative;
+}
+.navbar .theme .theme-button.rotate {
+  transform: rotate(0deg);
+}
+.navbar .menu .active {
+  font-family: 'neue-montreal-bold';
+}
+footer .logo-footer {
+  font-size: 16em;
+  opacity: 0;
+  text-align: center;
+  transition: all 3s;
+  color: var(--black);
+  font-family: 'neue-montreal-bold';
+}
+footer .contact-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  color: var(--black);
+  font-family: 'neue-montreal-medium';
+}
+footer .sponsored-footer {
+  text-align: center;
+  padding: 33px;
+  padding-bottom: 0px;
+  color: var(--black);
+  font-family: 'neue-montreal-medium';
+}
+footer .copyright-footer {
+  padding: 33px;
+  color: var(--black);
+  font-family: 'neue-montreal-medium';
+  padding-left: 132px;
+}
+.logo-footer.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media screen and (max-width: 1400px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navbar .menu {
+    grid-template-columns: 1fr 1fr;
+  }
+  footer .logo-footer {
+    font-size: 10em;
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navbar .menu {
+    display: none;
+  }
+  .navbar .logo {
+    padding-left: 0px;
+  }
+  .hamburger {
+    width: 30px;
+    height: 50px;
+  }
+  .hamburger div:nth-child(1) {
+    background-color: var(--black);
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    z-index: 99;
+    top: 17px;
+    transition: all 0.5s;
+    height: 3px;
+  }
+  .hamburger div:nth-child(1).show {
+    top: 18px;
+    rotate: -50deg;
+  }
+  .hamburger div:nth-child(2) {
+    background-color: var(--black);
+    width: 100%;
+    z-index: 100;
+    position: relative;
+    transition: all 0.5s;
+    top: 23px;
+    height: 3px;
+    border-radius: 10px;
+  }
+  .hamburger div:nth-child(2).show {
+    top: 15px;
+    rotate: 50deg;
+  }
+  .navbar {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .theme {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .menu-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: var(--white);
+    z-index: -99;
+    opacity: 0;
+    width: 100vw;
+    transition: all 0.5s;
+    height: 100vh;
+  }
+  body.overflow-hide {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .menu-mobile.show {
+    opacity: 1;
+    z-index: 99;
+  }
+  .menu-mobile a {
+    text-decoration: none;
+    color: var(--black);
+    height: 75px;
+    width: 150px;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'neue-montreal-medium';
+  }
+  footer .logo-footer {
+    font-size: 3em;
+    text-align: center;
+    padding: 15px;
+    padding-left: 10px;
+  }
+  footer .contact-footer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  footer .contact-footer div:nth-child(1),
+  footer .contact-footer div:nth-child(2),
+  footer .contact-footer div:nth-child(3) {
+    text-align: center;
+    padding: 15px;
+    padding-left: 10px;
+  }
+  footer .contact-footer div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  footer .sponsored-footer {
+    text-align: center;
+    padding: 15px;
+    padding-left: 10px;
+  }
+  footer .copyright-footer {
+    text-align: center;
+    padding: 15px;
+    padding-left: 10px;
+  }
+  .menu-mobile .active {
+    text-decoration: underline;
+  }
+}

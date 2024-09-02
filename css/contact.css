@@ -1,0 +1,91 @@
+#lets-connect {
+    font-family: 'neue-montreal-bold';
+    color: var(--black);
+    padding: 66px;
+}
+#lets-connect div:nth-child(1) {
+    font-size: 10vw;
+}
+#lets-connect div:nth-child(2) {
+    font-family: 'neue-montreal-medium';
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+#lets-connect div:nth-child(3) {
+    font-family: 'neue-montreal-medium';
+}
+#form-contact {
+    font-family: 'neue-montreal-medium';
+    color: var(--black);
+    padding: 66px;
+}
+.form-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.field-group {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    background-color: var(--white);
+    color: var(--black);
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.checkbox-group {
+    margin-top: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    filter: grayscale(5);
+}
+
+.checkbox-group label {
+    margin-right: 20px;
+}
+
+.submit-button {
+    display: inline-block;
+    background-image: url(../images/cursor.gif);
+    color: var(--black);
+    padding: 10px 30px;
+    border: 1px solid var(--black);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all .5s;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background-image: none;
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--white);
+}

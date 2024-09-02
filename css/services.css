@@ -1,0 +1,54 @@
+#ser-offered {
+  color: var(--black);
+  padding: 66px;
+}
+#ser-offered .big-t-service {
+  font-size: 10vw;
+  font-family: 'neue-montreal-bold';
+}
+#ser-offered .services- {
+  display: grid;
+  font-family: 'neue-montreal-medium';
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+
+#ser-offered .services- div:nth-child(1) {
+  grid-row: 1 / span 2;
+}
+
+#ser-offered .services- div:nth-child(2),
+#ser-offered .services- div:nth-child(3) {
+  grid-column: 2;
+}
+#ser-offered .services- div h3 {
+  font-size: 2.5em;
+}
+#ser-offered .services- div:nth-child(4) {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+#ser-offered .order-call {
+  padding: 66px;
+  font-family: 'neue-montreal-medium';
+  text-align: center;
+  font-size: 2em;
+}
+#ser-offered .order-call h3:nth-child(2) {
+    cursor: pointer;
+}
+#ser-offered .order-call h3 a {
+    color: var(--black);
+}
+@media screen and (max-width: 1400px) {
+  #ser-offered .services- {
+    display: flex;
+    flex-direction: column;
+  }
+    #ser-offered .order-call {
+        padding: 0px;
+        padding-top: 66px;
+        font-size: 1.3em;
+}
+}

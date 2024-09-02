@@ -1,0 +1,72 @@
+#porto-folio {
+    font-family: 'neue-montreal-bold';
+    color: var(--black);
+    padding: 66px;
+}
+#porto-folio div:nth-child(1) {
+    font-size: 10vw;
+}
+#porto-folio div:nth-child(2) {
+    font-family: 'neue-montreal-medium';
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-align: right;
+}
+#porto-folio div:nth-child(3) {
+    font-family: 'neue-montreal-medium';
+    text-align: right;
+}
+#showcase {
+    font-family: 'neue-montreal-medium';
+    color: white;
+    padding: 66px;
+}
+#showcase .showcase-content {
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+    border: 1px solid var(--black);
+}
+#showcase .showcase-content .the-showcase {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bela-tarr-s.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 33px;
+    transition: all .5s;
+    background-position: center;
+}
+#showcase .showcase-content .the-showcase .the-s-title {
+    font-size: 3em;
+}
+#showcase .arrow-nav {
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    width: fit-content;
+    transition: all .5s;
+    height: 30px;
+    display: grid;
+    color: var(--black);
+    place-items: center;
+    padding: 25px;
+    position: relative;
+}
+#showcase .arrow-nav:hover {
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+#showcase .arrow-nav.left {
+    border-radius: 25px 5px 5px 25px;
+}
+#showcase .arrow-nav.right {
+    border-radius: 5px 25px 25px 5px;
+}
+#showcase {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 25px 1fr 25px;
+}
