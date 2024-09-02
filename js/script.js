@@ -95,5 +95,5 @@ const loadingScreen = document.querySelector('.loading-screen');
 
 window.addEventListener('load', function() {
   loadingScreen.style.display = 'none';
-  body.style.overflow = 'auto';
+  body.style.overflow = 'scroll';
 })
