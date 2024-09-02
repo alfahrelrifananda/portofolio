@@ -93,8 +93,7 @@ theLogoFooterObserver.observe(theFooterLogo);
 
 const loadingScreen = document.querySelector('.loading-screen');
 
-body.classList.add('overflow-hide');
 window.addEventListener('load', function() {
   loadingScreen.style.display = 'none';
-  body.classList.remove('overflow-hide');
+  body.classList.remove('overflow-h');
 })
