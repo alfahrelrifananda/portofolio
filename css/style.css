@@ -135,6 +135,19 @@ footer .copyright-footer {
   opacity: 1;
   transform: translateY(0);
 }
+.loading-screen {
+  background-image: url('../images/cursor.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media screen and (max-width: 1400px) {
   body {
     overflow-x: hidden;
@@ -203,13 +216,13 @@ footer .copyright-footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     background-color: var(--white);
-    z-index: -99;
+    z-index: 99;
     opacity: 0;
     width: 100vw;
     transition: all 0.5s;
-    height: 100vh;
+    height: calc(100vh - 32px);
   }
   body.overflow-hide {
     overflow-y: hidden;
