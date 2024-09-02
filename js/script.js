@@ -80,13 +80,13 @@ function handleIntersection(
     }
   })
 }
-const observerOptions = {
+const observerOption = {
   rootMargin: '0px 0px',
   threshold: 0.8,
 }
 const theFooterLogo = document.querySelector('.logo-footer');
 const theLogoFooterObserver = new IntersectionObserver((entries) => {
   handleIntersection(entries, theLogoFooterObserver, 'show');
-}, observerOptions);
+}, observerOption);
 
 theLogoFooterObserver.observe(theFooterLogo);
