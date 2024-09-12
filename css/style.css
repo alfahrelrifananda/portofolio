@@ -148,9 +148,6 @@ footer .copyright-footer {
   align-items: center;
   justify-content: center;
 }
-body {
-  overflow: hidden;
-}
 @media screen and (max-width: 1400px) {
   body {
     overflow-x: hidden;
