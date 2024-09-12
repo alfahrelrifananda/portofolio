@@ -90,10 +90,3 @@ const theLogoFooterObserver = new IntersectionObserver((entries) => {
 }, observerOption);
 
 theLogoFooterObserver.observe(theFooterLogo);
-
-const loadingScreen = document.querySelector('.loading-screen');
-
-window.addEventListener('load', function() {
-  loadingScreen.style.display = 'none';
-  body.style.overflowY = 'scroll';
-})
