@@ -135,19 +135,6 @@ footer .copyright-footer {
   opacity: 1;
   transform: translateY(0);
 }
-.loading-screen {
-  background-image: url('../images/cursor.gif');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 @media screen and (max-width: 1400px) {
   body {
     overflow-x: hidden;
