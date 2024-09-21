@@ -46,7 +46,7 @@ body {
 .navbar {
   display: grid;
   z-index: 99;
-  width: 100vw;
+  width: 100%;
   transition: all 0.5s;
   opacity: 1;
   grid-template-columns: 1fr 1fr 1fr;
@@ -207,7 +207,7 @@ footer .copyright-footer {
     background-color: var(--white);
     z-index: 99;
     opacity: 0;
-    width: 100vw;
+    width: 100%;
     transition: all 0.5s;
     height: calc(100vh - 32px);
   }
