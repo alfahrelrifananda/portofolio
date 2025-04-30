@@ -123,6 +123,7 @@
 #ability .aDiv .a2 .paragraph,
 #ability .aDiv .a3 .paragraph {
   width: 80%;
+  letter-spacing: 3px;
   font-family: 'neue-montreal-light';
   font-size: 4vh;
   text-align: center;
